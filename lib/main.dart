@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        color: Colors.pink,
-        home: Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.blueGrey,
+      home: Scaffold(
+        backgroundColor: Colors.green, 
+        body: Center(
+          child: Text(
+            'Kamilla',
+            style: TextStyle(
+              color: Colors.purple
+            ),
           ),
-          body: Container(color: Colors.amber, child: Text("YEAH")),
-        ));
+        ),
+      ),
+    );
   }
 }
